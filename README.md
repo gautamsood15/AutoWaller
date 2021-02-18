@@ -13,4 +13,7 @@ To run the script we need to edit crontab using below command
 ``` 
 crontab -e
 ```
-
+Make sure the script is executable using below command
+```
+chmod 775 ./autowaller.py
+```
