@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os 
 from datetime import datetime
@@ -9,6 +9,8 @@ current_time = now.strftime("%H:%M:%S")
 hr,mn,sec = str(current_time).split(":")
 
 hr = int(hr)
+
+os.system("touch test.txt")
 
 if 5 > hr >= 0:
 	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/late_night.jpg')
