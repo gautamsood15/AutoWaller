@@ -11,19 +11,16 @@ hr,mn,sec = str(current_time).split(":")
 hr = int(hr)
 
 if 5 > hr >= 0:
-	print("Late Night")
+	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/late_night.jpg')
 elif 8 > hr >= 5:
-	print("Early Morning")
+	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/early_morning.jpg')
 elif 12 > hr >= 8:
-	print("Late Morning")
+	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/late_morning.jpg')
 elif 18 >= hr >= 12:
-	print("Afternoon")
+	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/afternoon.jpg')
 elif 23 >= hr > 18:
-	print("Early Night")
+	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/early_night.jpg')
 else:
 	print("Invalid Hour")
 
-
-
-#os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/firewatch_afternoon.jpg')
 
