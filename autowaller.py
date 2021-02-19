@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import os 
 from datetime import datetime
@@ -17,7 +17,7 @@ elif 8 > hr >= 5:
 elif 12 > hr >= 8:
 	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/late_morning.jpg')
 elif 18 >= hr >= 12:
-	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/afternoon.jpg')
+	os.system("gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/afternoon.jpg")
 elif 23 >= hr > 18:
 	os.system('gsettings set org.gnome.desktop.background picture-uri file:///home/gautamsood/Pictures/Wallpapers/early_night.jpg')
 else:
